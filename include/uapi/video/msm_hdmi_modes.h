@@ -131,6 +131,8 @@ struct msm_hdmi_mode_timing_info {
 #define HDMI_VFRMT_3840x2160p25_16_9	EVFRMT_OFF(2)
 #define HDMI_VFRMT_3840x2160p24_16_9	EVFRMT_OFF(3)
 #define HDMI_VFRMT_4096x2160p24_16_9	EVFRMT_OFF(4)
+/* CAF's newer name for the same mode, used by the display HAL */
+#define HDMI_EVFRMT_4096x2160p24_16_9	HDMI_VFRMT_4096x2160p24_16_9
 #define HDMI_EVFRMT_END			HDMI_VFRMT_4096x2160p24_16_9
 
 #define WQXGA_OFF(x)			(HDMI_EVFRMT_END + x)
